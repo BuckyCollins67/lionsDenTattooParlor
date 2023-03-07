@@ -1,39 +1,63 @@
+/* font pairings */
+/* font-family: 'Lato', sans-serif;
+font-family: 'Oswald', sans-serif; */
+
 section {
     border: 1px solid red;
 }
 
-nav {
-    border: 1px solid red;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 90%;
-}
+/* Set the display font to Oswald */
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Oswald", sans-serif;
+  }
+  
+  /* Set the body font to Lato */
+  body {
+    font-family: "Lato", sans-serif;
+  }
 
-ul {
+nav {
+    background: linear-gradient(to bottom,#666666, #222222 );
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  .logo {
+    margin-right: auto;
+  }
+  
+  ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    display: flex;
-}
-
-li {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 22.5%;
-
-}
-
+  }
+  
+  li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+  }
 /* Hero Section */
 
 .hero {
+    background-image: url(assets/tatHeroImage001);
+    background-size: cover;
+    background-position: center;
 	background-color: #f7f7f7;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	height: 90vh;
+    color: #f7f7f7;
 }
 
 
@@ -50,19 +74,14 @@ li {
 .cardPhoto {
      /* ff 3.6+ */
     background:-moz-linear-gradient(135deg, rgba(205, 74, 75, 1) 0%, rgba(135, 23, 18, 1) 100%); 
-
     /* safari 5.1+,chrome 10+ */
     background:-webkit-linear-gradient(135deg, rgba(205, 74, 75, 1) 0%, rgba(135, 23, 18, 1) 100%);
-
     /* opera 11.10+ */
     background:-o-linear-gradient(135deg, rgba(205, 74, 75, 1) 0%, rgba(135, 23, 18, 1) 100%);
-
     /* ie 6-9 */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#871712', endColorstr='#CD4A4B', GradientType=1 );
-
     /* ie 10+ */
     background:-ms-linear-gradient(135deg, rgba(205, 74, 75, 1) 0%, rgba(135, 23, 18, 1) 100%);
-
     /* global 94%+ browsers support */
     background:linear-gradient(135deg, rgba(205, 74, 75, 1) 0%, rgba(135, 23, 18, 1) 100%);
 
